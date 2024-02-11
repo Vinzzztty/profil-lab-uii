@@ -1,74 +1,97 @@
-.Btn {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
+@charset "UTF-8";
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-nav .nav-link.active {
     position: relative;
-    /* overflow: hidden; */
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 0.3s;
+    font-weight: bold;
 }
 
-.svgContainer {
+.navbar-nav .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /*Centertheline*/
+    bottom: -2px;
     width: 100%;
-    height: 100%;
+    height: 1.5px;
+    background-color: #333;
+    /* Adjust the color as needed */
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+/* Add hover effect */
+.navbar-nav .nav-link:hover {
+    color: #555;
+    /*Adjustthecolorasneeded*/
+    font-size: 1.1em;
+    /*Increasefontsizeonhover*/
+    transition: font-size 0.2s ease-in-out;
+    /* Add smooth transition effect */
+    -webkit-transition: font-size 0.2s ease-in-out;
+    -moz-transition: font-size 0.2s ease-in-out;
+    -ms-transition: font-size 0.2s ease-in-out;
+    -o-transition: font-size 0.2s ease-in-out;
+}
+
+.hero {
+    height: 85vh; /* Adjust the height as needed */
+    color: #fff; /* Adjust text color to be visible against the background */
+    background-image: url("../../public/img/jumbotron.png"); /* Replace 'your-image.jpg' with the actual image file path */
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(4px);
-    letter-spacing: 0.8px;
-    border-radius: 10px;
-    transition: all 0.3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
+    text-align: center;
 }
 
-.BG {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #f09433;
-    background: -moz-linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    background: -webkit-linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    background: linear-gradient(
-        45deg,
-        #f09433 0%,
-        #e6683c 25%,
-        #dc2743 50%,
-        #cc2366 75%,
-        #bc1888 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    z-index: -1;
-    border-radius: 9px;
-    pointer-events: none;
-    transition: all 0.3s;
+.hero img {
+    height: 30vh;
 }
 
-.Btn:hover .BG {
-    transform: rotate(35deg);
-    transform-origin: bottom;
+.hero h2 {
+    font-size: 3rem;
+}
+.hero h1 {
+    font-size: 5rem;
 }
 
-.Btn:hover .svgContainer {
-    background-color: rgba(156, 156, 156, 0.466);
+.hero img {
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.content .container {
+    margin-bottom: 30px; /* Adjust margin between containers */
+}
+
+.content ul {
+    list-style-type: circle;
+    padding: 0;
+}
+
+.content ul li {
+    padding: 5px 0;
+}
+
+.content3 {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.content3 img {
+    width: 100px;
 }

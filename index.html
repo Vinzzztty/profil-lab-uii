@@ -10,23 +10,198 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="./src/style/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
     </head>
     <body>
         <!-- Navbar -->
         <section>
-            <nav>Navbar</nav>
+            <div class="container">
+                <nav
+                    class="navbar navbar-expand-lg navbar-light bg-transparent border-bottom sticky-top"
+                >
+                    <div class="container-fluid ms-5 me-5">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="./public/img/UII_LOGO.svg.png"
+                                alt="gambar"
+                                width="120"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active text-dark"
+                                        aria-current="page"
+                                        href="#home"
+                                        >Homepage</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" href="#"
+                                        >Profile</a
+                                    >
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Mata Kuliah
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >A</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >B</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >C</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </section>
 
         <!-- Jumbotron -->
-        <section>
+        <section class="hero">
             <div class="container">
-                <h1>Jumbotron</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Selamat Datang!</h2>
+                        <h1>Laboratorium DatMin</h1>
+                        <h4>#MOVINGFORWARD</h4>
+                        <button>GuideBook</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./public/img/logo-lab.png" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Content -->
-        <section>
-            <div class="container"></div>
+        <section class="content">
+            <div class="container">
+                <div class="content1">
+                    <div class="row">
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img
+                                src="./public/img/statistika-logo.png"
+                                alt=""
+                                width="250"
+                            />
+                        </div>
+                        <div class="col-md-9">
+                            <h2>STATISTIKA 2</h2>
+                            <ul class="ms-4">
+                                <li>T-Test</li>
+                                <li>Anova</li>
+                                <li>Chi-Square</li>
+                                <li>Regresion and Correlation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content2">
+                    <div class="row">
+                        <div class="col-md-9 mt-5">
+                            <h2>ANALISIS KEPUTUSAN DAN DATA MINING</h2>
+                            <ul class="ms-4">
+                                <li>Analytical Hierarchy Process</li>
+                                <li>Analytical Network Process</li>
+                                <li>Clustering</li>
+                                <li>
+                                    Assosiation Rule - Market Basket Analysis
+                                </li>
+                                <li>Classification</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 d-flex align-items-center">
+                            <img
+                                src="./public/img/AKDM-logo.png"
+                                alt=""
+                                width="250"
+                            />
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="content3">
+                    <div class="course-icons">
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                        <a
+                            href="https://twitter.com/akukevinnnnnnn"
+                            class="social-icon"
+                            target="_blank"
+                            ><img src="./public/img/AKDM-logo.png" alt=""
+                        /></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
