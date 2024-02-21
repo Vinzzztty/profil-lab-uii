@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
 .navbar-nav .nav-link.active {
     position: relative;
     font-weight: bold;
@@ -38,13 +42,52 @@
 
 .hero {
     height: 90vh; /* Adjust the height as needed */
-    background-color: #333;
+    background: linear-gradient(to right, #000000, #737373);
     display: flex;
     align-items: center;
     text-align: center;
     padding: 500px 0;
+    position: relative;
 }
 
-.hero img {
-    height: 30vh;
+.col-md-4 img {
+    height: 25vh; /* Maintain the aspect ratio */
+}
+
+/* Style for the second image in the second column */
+.col-md-8 img {
+    height: 60vh; /* Maintain the aspect ratio */
+    margin: 0;
+}
+
+.profil {
+    padding: 50px 0;
+    background: linear-gradient(20deg, #b8b8b8, #ffffff);
+}
+
+.visiMisi {
+    padding: 100px 0;
+    background: linear-gradient(to right, #797979, #ffffff);
+    height: 90vh;
+    align-items: center;
+}
+
+.horizontal-line {
+    width: 100%;
+    height: 5px;
+    background-color: #000000; /* Color of the line */
+    margin-bottom: 15px; /* Adjust the spacing between line and text */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+
+footer p {
+    text-align: left;
+    margin-left: 20px;
 }
