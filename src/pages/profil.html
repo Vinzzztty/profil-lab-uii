@@ -10,28 +10,228 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="../style/profil.css" />
     </head>
     <body>
         <!-- Navbar -->
         <section>
-            <nav>Navbar</nav>
+            <div class="container">
+                <nav
+                    class="navbar fixed-top navbar-expand-lg navbar-light bg-light border-bottom pb-2"
+                >
+                    <div class="container-fluid ms-5 me-5">
+                        <a class="navbar-brand" href="#">
+                            <img
+                                src="../../public/img/UII_LOGO.svg.png"
+                                alt="logo-uii"
+                                width="120"
+                            />
+                        </a>
+                        <button
+                            class="navbar-toggler"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav"
+                            aria-expanded="false"
+                            aria-label="Toggle navigation"
+                        >
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a
+                                        href="../../index.html"
+                                        aria-current="page"
+                                        class="nav-link text-dark"
+                                        >Homepage</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="nav-link active text-dark"
+                                        href="./src/pages/profil.html"
+                                        >Profile</a
+                                    >
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a
+                                        class="nav-link dropdown-toggle"
+                                        href="#"
+                                        role="button"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                    >
+                                        Mata Kuliah
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >A</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >B</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#"
+                                                >C</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </section>
 
         <!-- Jumbotron -->
-        <section>
+        <section class="hero">
             <div class="container">
-                <h1>Jumbotron</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img
+                            src="../../public/img/datmin mforward.png"
+                            alt=""
+                        />
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../../public/img/foto asisten.jpg" alt="" />
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Content -->
-        <section>
-            <div class="container"></div>
+        <section class="profil">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Laboratorium Data Mining</h2>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/YVJj-INq5nk?si=qyVVBPhhzYcF31oA&amp;start=5"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <div class="col-md-6">
+                        <hr />
+                        <p>
+                            Laboratorium Data Mining merupakan salah satu
+                            laboratorium di Fakultas Teknologi Industri,
+                            Universitas Islam Indonesia Yogyakarta yang
+                            terbentuk pada tahun 2007. Pada awalnya nama
+                            laboratoium ini adalah SIPO yang kemudian berubah
+                            menjadi Data Mining dan SIOP. Sampai pada akhirnya
+                            berubah kembali pada tahun 2021 menjadi Laboratorium
+                            Data Mining.
+                        </p>
+                        <br />
+                        <p>
+                            Laboratorium Data Mining merupakan salah satu
+                            laboratorium di Jurusan Teknik Industri yang
+                            berfokus pada Operasional Riset dan Statistik.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content 2 -->
+        <section class="visiMisi">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2>VISI</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <hr />
+                    </div>
+                </div>
+                <p>
+                    Menumbuhkan semangat meneliti pada kalangan civitas
+                    akademika di lingkungan Fakultas Teknologi Industri,
+                    Universitas Islam Indonesia, dengan ilmu dan dakwah
+                    berstandar internasional dalam kajian ilmu Statistik dan
+                    Data Mining.
+                </p>
+                <div class="row">
+                    <div class="col-md-2">
+                        <h2>MISI</h2>
+                    </div>
+                    <div class="col-md-10">
+                        <hr />
+                    </div>
+                </div>
+                <ul class="ms-4">
+                    <li>
+                        Meningkatkan pemahaman mahasiswa teknik akan fungsi dan
+                        aplikasi keilmuan Statistik dan Data Mining
+                    </li>
+                    <li>
+                        Menanamkan pemahaman tentang pentingnya tradisi
+                        penelitian secara simultan kepada civitas akademika FTI
+                        UII
+                    </li>
+                    <li>
+                        Membangun budaya berfikir krtis, analitis, serta
+                        integral komprehensif guna memacu kreativitas civitas
+                        akademika FTI UII untuk merespon perkembangan ilmu dan
+                        teknlogi.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container text-center">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <img
+                            src="../../public/img/AKDM-logo.png"
+                            alt=""
+                            width="400"
+                            class="rounded mx-auto d-block"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="../../public/img/AKDM-logo.png"
+                            alt=""
+                            width="400"
+                        />
+                    </div>
+                    <div class="col">
+                        <img
+                            src="../../public/img/AKDM-logo.png"
+                            alt=""
+                            width="400"
+                        />
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
         <section>
-            <footer></footer>
+            <footer>
+                <div class="container">
+                    <p>
+                        <strong>Hubungi Kami:</strong><br />
+                        Jl. Kaliurang km. 14,5 Sleman, <br />
+                        Yogyakarta, Universitas Islam <br />Indonesia, 55584
+                    </p>
+                </div>
+            </footer>
         </section>
         <script
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
